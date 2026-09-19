@@ -20,3 +20,7 @@ src_w_solution/
 
 # Instructor-only notes (chứa gợi ý/đáp án chấm bài, không public cho học viên)
 docs/INSTRUCTOR_GUIDE.md
+.hf-cache/
+
+# Benchmark cache (12MB, sinh lại được)
+.embedding_cache.json

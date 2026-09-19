@@ -1,0 +1,116 @@
+====================================================================================================
+BENCHMARK — chiến lược: RecursiveChunker(chunk_size=400)
+Backend: Gemini (gemini-embedding-001 + gemini-3.5-flash-lite)
+Corpus: 6 file -> 60 chunk | avg_length=334.4 | max=400
+Chunk/file: chuong-trinh-dao-tao-dai-hoc=23, co-cau-doi-ngu-can-bo-giang-vien=10, hoc-bong-evn=8, ke-hoach-dao-tao-nam-hoc=9, phuong-thuc-xet-tuyen-hus=6, trao-doi-sinh-vien-osaka=4
+====================================================================================================
+
+Query #1: Sinh viên năm thứ mấy và cần đạt kết quả học tập thế nào để đủ điều kiện xét học bổng EVN?
+   gold_doc = hoc-bong-evn | gold_keyword = "năm thứ 3"
+   top-1: hoc-bong-evn#0                           audience=student  score=0.8116
+          # Chương trình học bổng EVN ĐHQGHN năm học 2025-2026 ⏎  ⏎ Chương trình được triển khai căn cứ thỏa thuận hợp t...
+   top-2: hoc-bong-evn#1                           audience=student  score=0.7855
+          Học bổng dành cho sinh viên năm thứ 3 đang theo học các ngành: năng lượng, năng lượng nguyên tử, tự động hóa, ...
+   top-3: hoc-bong-evn#2                           audience=student  score=0.7757
+          Chương trình ưu tiên sinh viên có hoàn cảnh khó khăn, tích cực tham gia các hoạt động xã hội và nghiên cứu kho...
+   -> gold doc ở hạng: 1 | keyword trong ngữ cảnh: CÓ
+   -> điểm theo doc_id (ngây thơ): 2/2 | điểm 2 mức (doc_id + nội dung): 2/2
+   Agent: Để đủ điều kiện xét học bổng EVN, sinh viên cần là sinh viên năm thứ 3 và đạt kết quả học tập năm học 2025–2026 từ loại giỏi trở lên [2].
+
+Query #2: Thời gian nghỉ Tết Nguyên đán năm học 2025-2026 của sinh viên chính quy kéo dài từ ngày nào đến ngày nào?
+   gold_doc = ke-hoach-dao-tao-nam-hoc | gold_keyword = "09/02-22/02/2026"
+   top-1: ke-hoach-dao-tao-nam-hoc#4               audience=student  score=0.8092
+          | 15 | Hoàn thành tổ chức đào tạo chương trình học kỳ I | 12/2025 | ⏎ | 16 | ĐHQGHN tổ chức Hội nghị tổng kết ...
+   top-2: ke-hoach-dao-tao-nam-hoc#0               audience=student  score=0.7821
+          # Lịch trình và kế hoạch đào tạo năm học 2025-2026 của ĐHQGHN ⏎  ⏎ Áp dụng cho các khóa đào tạo đại học chính ...
+   top-3: ke-hoach-dao-tao-nam-hoc#1               audience=student  score=0.7325
+          | TT | Nội dung công việc | Thời gian thực hiện | ⏎ | --- | --- | --- | ⏎ |  | Học kỳ I | 09/2025 | ⏎ | 1 | Kh...
+   -> gold doc ở hạng: 1 | keyword trong ngữ cảnh: CÓ
+   -> điểm theo doc_id (ngây thơ): 2/2 | điểm 2 mức (doc_id + nội dung): 2/2
+   Agent: Thời gian nghỉ Tết Nguyên đán kéo dài từ ngày 09/02 đến 22/02/2026 [1].
+
+Query #3: Phương thức 2 của Trường ĐH Khoa học Tự nhiên năm 2026 áp dụng nhân hệ số 2 môn Toán cho những ngành nào?
+   gold_doc = phuong-thuc-xet-tuyen-hus | gold_keyword = "Khoa học dữ liệu"
+   top-1: phuong-thuc-xet-tuyen-hus#0              audience=student  score=0.8362
+          # Phương thức tuyển sinh năm 2026 của Trường ĐH Khoa học Tự nhiên - ĐHQGHN ⏎  ⏎ 6 PHƯƠNG THỨC XÉT TUYỂN CHÍNH ...
+   top-2: chuong-trinh-dao-tao-dai-hoc#3           audience=student  score=0.7277
+          | 14 | Khoa học Máy tính (CTĐT CLC) |  | 1 |  | ⏎ | 15 | Hệ thống thông tin (CTĐT CLC) |  | 1 |  | ⏎ | 16 | Mạ...
+   top-3: chuong-trinh-dao-tao-dai-hoc#4           audience=student  score=0.7120
+          | 3 | Toán học (CTĐT tiên tiến) |  | 1 |  | ⏎ | 4 | Toán cơ |  |  |  | ⏎ | 5 | Toán - Tin | 1 |  |  | ⏎ | 6 | ...
+   -> gold doc ở hạng: 1 | keyword trong ngữ cảnh: CÓ
+   -> điểm theo doc_id (ngây thơ): 2/2 | điểm 2 mức (doc_id + nội dung): 2/2
+   Agent: Theo tài liệu, phương thức 2 (Mã 100) năm 2026 áp dụng nhân hệ số 2 môn Toán đối với các ngành: Toán học, Toán tin, Khoa học máy tính và thông tin, Khoa học dữ liệu [1].
+
+Query #4: Chương trình trao đổi sinh viên tại Đại học Osaka kỳ Xuân 2027 yêu cầu đã học bao nhiêu học kỳ và điểm GPA tối thiểu là bao nhiêu?
+   gold_doc = trao-doi-sinh-vien-osaka | gold_keyword = "3,2/4,0"
+   top-1: trao-doi-sinh-vien-osaka#0               audience=student  score=0.8289
+          # Chương trình trao đổi kỳ Xuân 2027 tại Đại học Osaka, Nhật Bản ⏎  ⏎ Đại học Quốc gia Hà Nội thông báo Chương...
+   top-2: trao-doi-sinh-vien-osaka#1               audience=student  score=0.7612
+          chương trình nghiên cứu trong phòng thí nghiệm khoa học – công nghệ; ⏎  ⏎ iExPO: ⏎  ⏎ chương trình giảng dạy b...
+   top-3: trao-doi-sinh-vien-osaka#2               audience=student  score=0.6518
+          Đáp ứng yêu cầu ngoại ngữ của từng chương trình, trong đó OUSSEP yêu cầu tối thiểu IELTS 6.0/TOEFL iBT 80, Fro...
+   -> gold doc ở hạng: 1 | keyword trong ngữ cảnh: CÓ
+   -> điểm theo doc_id (ngây thơ): 2/2 | điểm 2 mức (doc_id + nội dung): 2/2
+   Agent: Chương trình trao đổi sinh viên tại Đại học Osaka kỳ Xuân 2027 yêu cầu ứng viên đã hoàn thành ít nhất 02 học kỳ tại ĐHQGHN và có điểm GPA từ 3,2/4,0 trở lên [2].
+
+Query #5: Số lượng và danh mục các chương trình đào tạo chuẩn và đặc thù của Trường Đại học Công nghệ là gì?
+   metadata_filter = {'audience': 'student'}
+   gold_doc = chuong-trinh-dao-tao-dai-hoc | gold_keyword = "Trí tuệ nhân tạo"
+   top-1: chuong-trinh-dao-tao-dai-hoc#1           audience=student  score=0.8186
+          | STT | Tên ngành, chuyên ngành đào tạo | CTĐT chuẩn | CTĐT đặc thù (*) | Tổng | ⏎ | --- | --- | --- | --- | -...
+   top-2: chuong-trinh-dao-tao-dai-hoc#0           audience=student  score=0.7598
+          # Danh mục các chương trình đào tạo bậc đại học tại ĐHQGHN ⏎  ⏎ Dưới đây là danh mục chi tiết các chương trình...
+   top-3: chuong-trinh-dao-tao-dai-hoc#20          audience=student  score=0.7338
+          | 9 | Kỹ sư Tự động hóa và tin học |  | 1 |  | ⏎ | 10 | Công nghệ thông tin ứng dụng |  | 1 |  | ⏎ | 11 | Công...
+   -> gold doc ở hạng: 1 | keyword trong ngữ cảnh: KHÔNG
+   -> điểm theo doc_id (ngây thơ): 2/2 | điểm 2 mức (doc_id + nội dung): 0/2
+   Agent: Dựa trên tài liệu cung cấp, danh mục các chương trình đào tạo chuẩn và đặc thù của Trường Đại học Công nghệ bao gồm: 1. Công nghệ thông tin (CTĐT chuẩn) [1] 2. Công nghệ thông tin (CTĐT CLC - CTĐT đặc thù) [1] 3. Công nghệ thông tin định hướng thị trường Nhật Bản (CTĐT chuẩn) [1] 4. Kỹ thuật máy tính (CTĐT chuẩn) [1] 5. Kỹ thuật Robot (CTĐT thí điểm - CTĐT chuẩn) [1]  Tài liệu không nêu rõ tổng số lượng cụ thể mà chỉ liệt kê chi tiết các ngành và chương trình như trên [1].
+
+Query #5b (ĐỀ XUẤT thay Q5, không tính vào tổng): Theo thống kê của ĐHQGHN, Trường Đại học Công nghệ có tổng số bao nhiêu?
+   metadata_filter = {'audience': 'student'} | gold_doc = chuong-trinh-dao-tao-dai-hoc | gold_keyword = "Trí tuệ nhân tạo"
+   top-1: chuong-trinh-dao-tao-dai-hoc#1           audience=student  score=0.6992
+          | STT | Tên ngành, chuyên ngành đào tạo | CTĐT chuẩn | CTĐT đặc thù (*) | Tổng | ⏎ | --- | --- | --- | --- | -...
+   top-2: chuong-trinh-dao-tao-dai-hoc#0           audience=student  score=0.6907
+          # Danh mục các chương trình đào tạo bậc đại học tại ĐHQGHN ⏎  ⏎ Dưới đây là danh mục chi tiết các chương trình...
+   top-3: phuong-thuc-xet-tuyen-hus#2              audience=student  score=0.6725
+          - Phương thức 5 (Mã 409): Kết hợp chứng chỉ Tiếng Anh quốc tế (IELTS từ 5.5 trở lên hoặc tương đương) với kết ...
+   -> gold doc ở hạng: 1 | keyword trong ngữ cảnh: KHÔNG | điểm 2 mức: 0/2
+   Agent: Không tìm thấy thông tin trong tài liệu.
+
+----------------------------------------------------------------------------------------------------
+TỔNG: điểm 2 mức = 8/10 | điểm chỉ theo doc_id = 10/10 (chênh lệch = phần bị thổi phồng)
+----------------------------------------------------------------------------------------------------
+
+=== A/B FILTER — Query #5 (câu chính thức): "Số lượng và danh mục các chương trình đào tạo chuẩn và đặc thù của Trường Đại học Công nghệ là gì?"
+  KHÔNG filter:
+     top-1: chuong-trinh-dao-tao-dai-hoc#1           audience=student  score=0.8186
+            | STT | Tên ngành, chuyên ngành đào tạo | CTĐT chuẩn | CTĐT đặc thù (*) | Tổng |...
+     top-2: chuong-trinh-dao-tao-dai-hoc#0           audience=student  score=0.7598
+            # Danh mục các chương trình đào tạo bậc đại học tại ĐHQGHN ⏎  ⏎ Dưới đây là danh...
+     top-3: chuong-trinh-dao-tao-dai-hoc#20          audience=student  score=0.7338
+            | 9 | Kỹ sư Tự động hóa và tin học |  | 1 |  | ⏎ | 10 | Công nghệ thông tin ứng ...
+  CÓ filter {'audience': 'student'}:
+     top-1: chuong-trinh-dao-tao-dai-hoc#1           audience=student  score=0.8186
+            | STT | Tên ngành, chuyên ngành đào tạo | CTĐT chuẩn | CTĐT đặc thù (*) | Tổng |...
+     top-2: chuong-trinh-dao-tao-dai-hoc#0           audience=student  score=0.7598
+            # Danh mục các chương trình đào tạo bậc đại học tại ĐHQGHN ⏎  ⏎ Dưới đây là danh...
+     top-3: chuong-trinh-dao-tao-dai-hoc#20          audience=student  score=0.7338
+            | 9 | Kỹ sư Tự động hóa và tin học |  | 1 |  | ⏎ | 10 | Công nghệ thông tin ứng ...
+  -> top-3 GIỐNG HỆT (filter không đổi gì)
+
+=== A/B FILTER — Query #5b (đề xuất — không nêu đối tượng): "Theo thống kê của ĐHQGHN, Trường Đại học Công nghệ có tổng số bao nhiêu?"
+  KHÔNG filter:
+     top-1: co-cau-doi-ngu-can-bo-giang-vien#0       audience=faculty  score=0.7548
+            # Thống kê đội ngũ cán bộ giảng viên theo chức danh khoa học và trình độ đào tạo...
+     top-2: co-cau-doi-ngu-can-bo-giang-vien#2       audience=faculty  score=0.7493
+            | 3 | Trường Đại học Ngoại ngữ | 781 | 168 | 470 | 120 | 23 | 1 | 11 | ⏎ | 4 | T...
+     top-3: co-cau-doi-ngu-can-bo-giang-vien#9       audience=faculty  score=0.7148
+            | 28 | Ban Quản lý dự án "Phát triển các đại học quốc gia Việt Nam- Tiểu dự án Đ...
+  CÓ filter {'audience': 'student'}:
+     top-1: chuong-trinh-dao-tao-dai-hoc#1           audience=student  score=0.6992
+            | STT | Tên ngành, chuyên ngành đào tạo | CTĐT chuẩn | CTĐT đặc thù (*) | Tổng |...
+     top-2: chuong-trinh-dao-tao-dai-hoc#0           audience=student  score=0.6907
+            # Danh mục các chương trình đào tạo bậc đại học tại ĐHQGHN ⏎  ⏎ Dưới đây là danh...
+     top-3: phuong-thuc-xet-tuyen-hus#2              audience=student  score=0.6725
+            - Phương thức 5 (Mã 409): Kết hợp chứng chỉ Tiếng Anh quốc tế (IELTS từ 5.5 trở ...
+  -> top-3 KHÁC NHAU (filter có tác dụng)

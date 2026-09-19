@@ -1,0 +1,510 @@
+[
+ {
+  "strategy": "fixed_size",
+  "chunks": 135,
+  "avg_len": 196.9037037037037,
+  "per_query": [
+   {
+    "id": 1,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "hoc-bong-evn#0",
+    "top1_score": 0.7911859701242274,
+    "answer": "Dựa trên tài liệu được cung cấp:\n\n- **Đối tượng:** Học bổng dành cho sinh viên năm thứ 3 [2].\n- **Tiêu chuẩn học tập:** Kết quả học tập năm học 2025–2026 đạt loại giỏi trở lên [3]."
+   },
+   {
+    "id": 2,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "ke-hoach-dao-tao-nam-hoc#10",
+    "top1_score": 0.7920334150212613,
+    "answer": "Thời gian nghỉ Tết Nguyên đán kéo dài từ ngày 09/02 đến ngày 22/02/2026 [1]."
+   },
+   {
+    "id": 3,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "phuong-thuc-xet-tuyen-hus#1",
+    "top1_score": 0.8274690066284465,
+    "answer": "Phương thức 2 năm 2026 áp dụng nhân hệ số 2 môn Toán cho các ngành: Toán học, Toán tin, Khoa học máy tính (và thông tin), Khoa học dữ liệu [1][3]."
+   },
+   {
+    "id": 4,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "trao-doi-sinh-vien-osaka#0",
+    "top1_score": 0.8324785513012326,
+    "answer": "Chương trình trao đổi sinh viên tại Đại học Osaka kỳ Xuân 2027 yêu cầu ứng viên đã hoàn thành ít nhất 02 học kỳ tại ĐHQGHN và có điểm GPA từ 3,2/4,0 trở lên [3]."
+   },
+   {
+    "id": 5,
+    "rank": 1,
+    "kw": false,
+    "strict": 0,
+    "naive": 2,
+    "top1": "chuong-trinh-dao-tao-dai-hoc#1",
+    "top1_score": 0.7923701842953486,
+    "answer": "Dựa trên tài liệu được cung cấp, danh mục các chương trình đào tạo của Trường Đại học Công nghệ bao gồm:\n1. Công nghệ thông tin (CTĐT chuẩn) [1][2]\n2. Công nghệ thông tin (CTĐT CLC - Chương trình đào tạo đặc thù) [1][2]\n3. Công nghệ thông tin định hướng thị trường [2]\n\nTuy nhiên, ngữ cảnh không cung cấp đầy đủ danh mục chi tiết toàn bộ các chương trình cũng như tổng số lượng cụ thể của trường này [1][2][3]."
+   }
+  ],
+  "q5b": {
+   "rank": 1,
+   "kw": false,
+   "strict": 0,
+   "answer": "Không tìm thấy thông tin trong tài liệu."
+  },
+  "strict": 8,
+  "naive": 10,
+  "ab_main": {
+   "same": true,
+   "no_filter": [
+    [
+     "chuong-trinh-dao-tao-dai-hoc#1",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#2",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#0",
+     "student"
+    ]
+   ],
+   "with_filter": [
+    [
+     "chuong-trinh-dao-tao-dai-hoc#1",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#2",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#0",
+     "student"
+    ]
+   ]
+  },
+  "ab_extra": {
+   "same": false,
+   "no_filter": [
+    [
+     "chuong-trinh-dao-tao-dai-hoc#1",
+     "student"
+    ],
+    [
+     "co-cau-doi-ngu-can-bo-giang-vien#0",
+     "faculty"
+    ],
+    [
+     "co-cau-doi-ngu-can-bo-giang-vien#21",
+     "faculty"
+    ]
+   ],
+   "with_filter": [
+    [
+     "chuong-trinh-dao-tao-dai-hoc#1",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#2",
+     "student"
+    ],
+    [
+     "phuong-thuc-xet-tuyen-hus#5",
+     "student"
+    ]
+   ]
+  }
+ },
+ {
+  "strategy": "by_sentences",
+  "chunks": 19,
+  "avg_len": 1057.421052631579,
+  "per_query": [
+   {
+    "id": 1,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "hoc-bong-evn#0",
+    "top1_score": 0.814845764735632,
+    "answer": "Dựa trên tài liệu được cung cấp:\n\n- **Đối tượng:** Học bổng dành cho sinh viên năm thứ 3 [1].\n- **Tiêu chuẩn học tập:** Kết quả học tập năm học 2025–2026 đạt loại giỏi trở lên [1]."
+   },
+   {
+    "id": 2,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "ke-hoach-dao-tao-nam-hoc#0",
+    "top1_score": 0.7761531882550581,
+    "answer": "Thời gian nghỉ Tết Nguyên đán trong năm học 2025-2026 kéo dài từ ngày 09/02 đến ngày 22/02/2026 [1]."
+   },
+   {
+    "id": 3,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "phuong-thuc-xet-tuyen-hus#0",
+    "top1_score": 0.835048088221587,
+    "answer": "Phương thức 2 (Mã 100) của Trường ĐH Khoa học Tự nhiên năm 2026 áp dụng nhân hệ số 2 môn Toán cho các ngành sau:\n- Toán học [1]\n- Toán tin [1]\n- Khoa học máy tính và thông tin [1]\n- Khoa học dữ liệu [1]"
+   },
+   {
+    "id": 4,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "trao-doi-sinh-vien-osaka#0",
+    "top1_score": 0.8266244087929625,
+    "answer": "Chương trình trao đổi sinh viên tại Đại học Osaka kỳ Xuân 2027 yêu cầu ứng viên đã hoàn thành ít nhất 02 học kỳ tại ĐHQGHN và có điểm GPA từ 3,2/4,0 trở lên [2]."
+   },
+   {
+    "id": 5,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "chuong-trinh-dao-tao-dai-hoc#0",
+    "top1_score": 0.8063963345100535,
+    "answer": "Dựa trên tài liệu được cung cấp, danh mục các chương trình đào tạo chuẩn và đặc thù bậc đại học của Trường Đại học Công nghệ bao gồm [1]:\n\n1. Công nghệ thông tin (CTĐT chuẩn) [1]\n2. Công nghệ thông tin (CTĐT CLC - CTĐT đặc thù) [1]\n3. Công nghệ thông tin định hướng thị trường Nhật Bản (CTĐT chuẩn) [1]\n4. Kỹ thuật máy tính (CTĐT chuẩn) [1]\n5. Kỹ thuật Robot (CTĐT thí điểm - CTĐT chuẩn) [1]\n6. Kỹ thuật năng lượng (CTĐT thí điểm - CTĐT chuẩn) [1]\n7. Vật lý kỹ thuật (CTĐT chuẩn) [1]\n8. Cơ kỹ thuật (CTĐT chuẩn) [1]\n9. Công nghệ kỹ thuật xây dựng (CTĐT chuẩn) [1]\n10. Công nghệ Hàng không vũ trụ (CTĐT thí điểm - CTĐT chuẩn) [1]\n11. Kỹ thuật điều khiển và tự động hóa (CTĐT chuẩn) [1]\n12. Công nghệ nông nghiệp (CTĐT thí điểm - CTĐT chuẩn) [1]\n13. Công nghệ kỹ thuật cơ điện tử (CTĐT CLC - CTĐT đặc thù) [1]\n14. Khoa học Máy tính (CTĐT CLC - CTĐT đặc thù) [1]\n15. Hệ thống thông tin (CTĐT CLC - CTĐT đặc thù) [1]\n16. Mạng máy tính và truyền thông dữ liệu (CTĐT CLC - CTĐT đặc thù) [1]\n17. Công nghệ kỹ thuật điện tử - viễn thông (CTĐT CLC - CTĐT đặc thù) [1]\n18. Trí tuệ nhân tạo (CTĐT chuẩn) [1]\n\nTổng cộng có 18 chương trình đào tạo được liệt kê cho trường này [1]."
+   }
+  ],
+  "q5b": {
+   "rank": 1,
+   "kw": true,
+   "strict": 2,
+   "answer": "Không tìm thấy thông tin trong tài liệu."
+  },
+  "strict": 10,
+  "naive": 10,
+  "ab_main": {
+   "same": true,
+   "no_filter": [
+    [
+     "chuong-trinh-dao-tao-dai-hoc#0",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#3",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#2",
+     "student"
+    ]
+   ],
+   "with_filter": [
+    [
+     "chuong-trinh-dao-tao-dai-hoc#0",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#3",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#2",
+     "student"
+    ]
+   ]
+  },
+  "ab_extra": {
+   "same": false,
+   "no_filter": [
+    [
+     "co-cau-doi-ngu-can-bo-giang-vien#0",
+     "faculty"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#0",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#3",
+     "student"
+    ]
+   ],
+   "with_filter": [
+    [
+     "chuong-trinh-dao-tao-dai-hoc#0",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#3",
+     "student"
+    ],
+    [
+     "phuong-thuc-xet-tuyen-hus#2",
+     "student"
+    ]
+   ]
+  }
+ },
+ {
+  "strategy": "recursive",
+  "chunks": 60,
+  "avg_len": 334.35,
+  "per_query": [
+   {
+    "id": 1,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "hoc-bong-evn#0",
+    "top1_score": 0.811639018490904,
+    "answer": "Để đủ điều kiện xét học bổng EVN, sinh viên cần là sinh viên năm thứ 3 và đạt kết quả học tập năm học 2025–2026 từ loại giỏi trở lên [2]."
+   },
+   {
+    "id": 2,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "ke-hoach-dao-tao-nam-hoc#4",
+    "top1_score": 0.8091512217990307,
+    "answer": "Thời gian nghỉ Tết Nguyên đán kéo dài từ ngày 09/02 đến 22/02/2026 [1]."
+   },
+   {
+    "id": 3,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "phuong-thuc-xet-tuyen-hus#0",
+    "top1_score": 0.8361594925448365,
+    "answer": "Theo tài liệu, phương thức 2 (Mã 100) năm 2026 áp dụng nhân hệ số 2 môn Toán đối với các ngành: Toán học, Toán tin, Khoa học máy tính và thông tin, Khoa học dữ liệu [1]."
+   },
+   {
+    "id": 4,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "trao-doi-sinh-vien-osaka#0",
+    "top1_score": 0.828918724356233,
+    "answer": "Chương trình trao đổi sinh viên tại Đại học Osaka kỳ Xuân 2027 yêu cầu ứng viên đã hoàn thành ít nhất 02 học kỳ tại ĐHQGHN và có điểm GPA từ 3,2/4,0 trở lên [2]."
+   },
+   {
+    "id": 5,
+    "rank": 1,
+    "kw": false,
+    "strict": 0,
+    "naive": 2,
+    "top1": "chuong-trinh-dao-tao-dai-hoc#1",
+    "top1_score": 0.8186351855661943,
+    "answer": "Dựa trên tài liệu cung cấp, danh mục các chương trình đào tạo chuẩn và đặc thù của Trường Đại học Công nghệ bao gồm:\n1. Công nghệ thông tin (CTĐT chuẩn) [1]\n2. Công nghệ thông tin (CTĐT CLC - CTĐT đặc thù) [1]\n3. Công nghệ thông tin định hướng thị trường Nhật Bản (CTĐT chuẩn) [1]\n4. Kỹ thuật máy tính (CTĐT chuẩn) [1]\n5. Kỹ thuật Robot (CTĐT thí điểm - CTĐT chuẩn) [1]\n\nTài liệu không nêu rõ tổng số lượng cụ thể mà chỉ liệt kê chi tiết các ngành và chương trình như trên [1]."
+   }
+  ],
+  "q5b": {
+   "rank": 1,
+   "kw": false,
+   "strict": 0,
+   "answer": "Không tìm thấy thông tin trong tài liệu."
+  },
+  "strict": 8,
+  "naive": 10,
+  "ab_main": {
+   "same": true,
+   "no_filter": [
+    [
+     "chuong-trinh-dao-tao-dai-hoc#1",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#0",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#20",
+     "student"
+    ]
+   ],
+   "with_filter": [
+    [
+     "chuong-trinh-dao-tao-dai-hoc#1",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#0",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#20",
+     "student"
+    ]
+   ]
+  },
+  "ab_extra": {
+   "same": false,
+   "no_filter": [
+    [
+     "co-cau-doi-ngu-can-bo-giang-vien#0",
+     "faculty"
+    ],
+    [
+     "co-cau-doi-ngu-can-bo-giang-vien#2",
+     "faculty"
+    ],
+    [
+     "co-cau-doi-ngu-can-bo-giang-vien#9",
+     "faculty"
+    ]
+   ],
+   "with_filter": [
+    [
+     "chuong-trinh-dao-tao-dai-hoc#1",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#0",
+     "student"
+    ],
+    [
+     "phuong-thuc-xet-tuyen-hus#2",
+     "student"
+    ]
+   ]
+  }
+ },
+ {
+  "strategy": "heading",
+  "chunks": 61,
+  "avg_len": 459.0,
+  "per_query": [
+   {
+    "id": 1,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "hoc-bong-evn#1",
+    "top1_score": 0.8430882076241836,
+    "answer": "Để đủ điều kiện xét học bổng EVN, sinh viên cần đáp ứng các điều kiện:\n- Là sinh viên năm thứ 3 [1].\n- Kết quả học tập năm học 2025–2026 đạt loại giỏi trở lên [1]."
+   },
+   {
+    "id": 2,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "ke-hoach-dao-tao-nam-hoc#4",
+    "top1_score": 0.8122201472933025,
+    "answer": "Thời gian nghỉ Tết Nguyên đán trong năm học 2025-2026 kéo dài từ ngày 09/02 đến ngày 22/02/2026 [1]."
+   },
+   {
+    "id": 3,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "phuong-thuc-xet-tuyen-hus#1",
+    "top1_score": 0.7982452276101513,
+    "answer": "Phương thức 2 của Trường Đại học Khoa học Tự nhiên năm 2026 áp dụng nhân hệ số 2 môn Toán cho các ngành sau:\n- Toán học [1]\n- Toán tin [1]\n- Khoa học máy tính và thông tin [1]\n- Khoa học dữ liệu [1]"
+   },
+   {
+    "id": 4,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "trao-doi-sinh-vien-osaka#3",
+    "top1_score": 0.8767179398088261,
+    "answer": "Chương trình trao đổi sinh viên tại Đại học Osaka kỳ Xuân 2027 yêu cầu ứng viên đã hoàn thành ít nhất 02 học kỳ tại ĐHQGHN và có điểm GPA từ 3,2/4,0 trở lên [1]."
+   },
+   {
+    "id": 5,
+    "rank": 1,
+    "kw": true,
+    "strict": 2,
+    "naive": 2,
+    "top1": "chuong-trinh-dao-tao-dai-hoc#1",
+    "top1_score": 0.8376173914633264,
+    "answer": "Dựa trên tài liệu cung cấp, danh mục các ngành và chuyên ngành đào tạo bậc đại học tại Trường Đại học Công nghệ (chia theo chương trình đào tạo chuẩn và chương trình đào tạo đặc thù) bao gồm:\n\n**Chương trình đào tạo chuẩn:**\n1. Công nghệ thông tin [1]\n2. Công nghệ thông tin định hướng thị trường Nhật Bản [1]\n3. Kỹ thuật máy tính [1]\n4. Kỹ thuật Robot (CTĐT thí điểm) [1]\n5. Kỹ thuật năng lượng (CTĐT thí điểm) [1]\n6. Vật lý kỹ thuật [1]\n7. Cơ kỹ thuật [1]\n8. Công nghệ kỹ thuật xây dựng [2]\n9. Công nghệ Hàng không vũ trụ (CTĐT thí điểm) [2]\n10. Kỹ thuật điều khiển và tự động hóa [2]\n11. Công nghệ nông nghiệp (CTĐT thí điểm) [2]\n12. Trí tuệ nhân tạo [3]\n\n**Chương trình đào tạo đặc thù:**\n1. Công nghệ thông tin (CTĐT CLC) [1]\n2. Công nghệ kỹ thuật cơ điện tử (CTĐT CLC) [2]\n3. Khoa học Máy tính (CTĐT CLC) [2]\n4. Hệ thống thông tin (CTĐT CLC) [2]\n5. Mạng máy tính và truyền thông dữ liệu (CTĐT CLC) [3]\n6. Công nghệ kỹ thuật điện tử - viễn thông (CTĐT CLC) [3]"
+   }
+  ],
+  "q5b": {
+   "rank": 1,
+   "kw": true,
+   "strict": 2,
+   "answer": "Không tìm thấy thông tin trong tài liệu."
+  },
+  "strict": 10,
+  "naive": 10,
+  "ab_main": {
+   "same": true,
+   "no_filter": [
+    [
+     "chuong-trinh-dao-tao-dai-hoc#1",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#2",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#3",
+     "student"
+    ]
+   ],
+   "with_filter": [
+    [
+     "chuong-trinh-dao-tao-dai-hoc#1",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#2",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#3",
+     "student"
+    ]
+   ]
+  },
+  "ab_extra": {
+   "same": false,
+   "no_filter": [
+    [
+     "co-cau-doi-ngu-can-bo-giang-vien#0",
+     "faculty"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#1",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#2",
+     "student"
+    ]
+   ],
+   "with_filter": [
+    [
+     "chuong-trinh-dao-tao-dai-hoc#1",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#2",
+     "student"
+    ],
+    [
+     "chuong-trinh-dao-tao-dai-hoc#3",
+     "student"
+    ]
+   ]
+  }
+ }
+]
